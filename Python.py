@@ -13,7 +13,7 @@ CORS(app)  # allow frontend requests
 conn = mysql.connector.connect(
     host="localhost",
     user="root",
-    password="Mysql@98190",
+    password="Mysqlpassword",
     database="trendnews_schema"
 )
 cursor = conn.cursor()
@@ -31,7 +31,7 @@ CREATE TABLE IF NOT EXISTS news_articles (
 # ==============================
 # API Key
 # ==============================
-api_key = "88223e11e4bd1dcbc5f2edc1b661921d"
+api_key = "Gnewsapi"
 
 # ==============================
 # Fetch News Function
@@ -102,4 +102,5 @@ def search_news():
 # ==============================
 if __name__ == "__main__":
     app.run(debug=True)
+
 
